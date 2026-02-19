@@ -2,16 +2,16 @@
 # AB6 – Towards Smarter Agriculture: Deep Learning-Based Multistage Detection of Leaf Diseases
 
 ## Team Info
-- 22471A0533 — **KOYYALAMUDI VENKATA RAMESH** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0533 — **KOYYALAMUDI VENKATA RAMESH** ( [LinkedIn](https://www.linkedin.com/in/koyyalamudi-venkata-ramesh-b243052a5) )
 _Work Done: Dataset preprocessing, EfficientNet-B0 model training, performance evaluation, and project documentation.
 
-- 22471A0557 — **BANGARU SURYA PRASAD** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0557 — **BANGARU SURYA PRASAD** ( [LinkedIn](https://www.linkedin.com/in/surya-bangaru-4b243a374) )
 _Work Done: Feature extraction using PCFAN, disease segmentation with Red Fox Optimization, and result analysis.
 
-- 22471A0547 — **THULLIBILLI NAGAIAH** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0547 — **THULLIBILLI NAGAIAH** ( [LinkedIn](https://www.linkedin.com/in/nagaiah-thullibilli-8724a93a6) )
 _Work Done: Data augmentation, preprocessing pipeline development, and model testing.
 
-- 22471A0561 — **SHAIK ABDUL NABI** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0561 — **SHAIK ABDUL NABI** ( [LinkedIn](https://www.linkedin.com/in/abdul-nabi-24ba2628b) )
 _Work Done: Literature survey, performance metrics analysis, and paper formatting.
 
 ---
