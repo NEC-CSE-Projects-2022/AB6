@@ -5,13 +5,13 @@
 - 22471A0533 — **KOYYALAMUDI VENKATA RAMESH** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
 _Work Done: Dataset preprocessing, EfficientNet-B0 model training, performance evaluation, and project documentation.
 
-- 22471A05XX — **BANGARU SURYA PRASAD** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0557 — **BANGARU SURYA PRASAD** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
 _Work Done: Feature extraction using PCFAN, disease segmentation with Red Fox Optimization, and result analysis.
 
-- 22471A05XX — **THULLIBILLI NAGAIAH** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0547 — **THULLIBILLI NAGAIAH** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
 _Work Done: Data augmentation, preprocessing pipeline development, and model testing.
 
-- 22471A05XX — **SHAIK ABDUL NABI** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
+- 22471A0561 — **SHAIK ABDUL NABI** ( [LinkedIn](https://linkedin.com/in/xxxxxxxxxx) )
 _Work Done: Literature survey, performance metrics analysis, and paper formatting.
 
 ---
