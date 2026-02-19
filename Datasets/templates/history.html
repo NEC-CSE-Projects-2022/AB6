@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %}History • Plant Disease Detector{% endblock %}
+
+{% block content %}
+
+<section class="card">
+  <h2>Prediction History (Last 30)</h2>
+
+  {% if history and history|length > 0 %}
+
+  <div class="history-list">
+
+    {% for item in history %}
+    <div class="history-row">
+
+      <!-- image -->
+      <img src="{{ item.image }}" class="history-img">
+
+      <!-- result -->
+      <div class="history-result">
+        {{ item.result }}
+      </div>
+
+      <!-- download -->
+      <button class="btn-primary small-btn"
+        onclick="downloadImage('{{ item.image }}',
+                               'history_{{ loop.index }}.jpg',
+                               '{{ item.result }}')">
+        Download
+      </button>
+
+    </div>
+    {% endfor %}
+
+  </div>
+
+  {% else %}
+  <p class="hint">No predictions yet.</p>
+  {% endif %}
+
+</section>
+
+{% endblock %}
+
+
+
+{% block scripts %}
+<script>
+/* same canvas download method */
+function downloadImage(dataUrl, filename, text) {
+
+  const img = new Image();
+
+  img.onload = function () {
+
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    const pad = 60;
+
+    canvas.width = img.width;
+    canvas.height = img.height + pad;
+
+    ctx.fillStyle = "#fff";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    ctx.drawImage(img, 0, 0);
+
+    ctx.fillStyle = "#000";
+    ctx.font = "18px Arial";
+    ctx.textAlign = "center";
+
+    ctx.fillText(text, canvas.width/2, img.height + 35);
+
+    const finalImg = canvas.toDataURL("image/jpeg", 0.95);
+
+    const link = document.createElement("a");
+    link.href = finalImg;
+    link.download = filename;
+    link.click();
+  };
+
+  img.src = dataUrl;
+}
+</script>
+{% endblock %}

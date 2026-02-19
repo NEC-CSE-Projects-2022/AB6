@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}Home • Plant Disease Detector{% endblock %}
+{% block content %}
+<section class="hero">
+  <h1>Welcome to PlantCare</h1>
+  <p class="lead">Upload a leaf photo to check if it’s healthy or diseased — fast, private, and accurate.</p>
+  <a class="btn-primary big" href="{{ url_for('predict') }}">Start Prediction</a>
+</section>
+
+<section class="grid3">
+  <div class="card">
+    <h3>Private by design</h3>
+    <p>Images are processed in-memory and are not saved on the server.</p>
+  </div>
+  <div class="card">
+    <h3>Leaf validation</h3>
+    <p>We first confirm the image is a leaf before any disease prediction.</p>
+  </div>
+  <div class="card">
+    <h3>Actionable results</h3>
+    <p>See healthy/diseased status with confidence percentage.</p>
+  </div>
+</section>
+{% endblock %}
