@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{% block title %}Plant Disease Detector{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='app.css') }}">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-left">
+      <span class="brand">🌿 PlantCare</span>
+      <a href="{{ url_for('index') }}" class="nav-link {% if page=='home' %}active{% endif %}">Home</a>
+      <a href="{{ url_for('predict') }}" class="nav-link {% if page=='predict' %}active{% endif %}">Prediction</a>
+      <a href="{{ url_for('instructions') }}" class="nav-link {% if page=='instructions' %}active{% endif %}">Instructions</a>
+      <a href="{{ url_for('about') }}" class="nav-link {% if page=='about' %}active{% endif %}">About us</a>
+      <a href="{{ url_for('dataset') }}" class="nav-link">Dataset</a>
+      <a href="{{ url_for('history') }}" class="nav-link">History</a>
+
+
+    </div>
+    <div class="nav-right"></div>
+  </nav>
+
+  <main class="main">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        <div class="flash-wrap">
+          {% for m in messages %}
+            <div class="flash">{{ m }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+    {% endwith %}
+
+    {% block content %}{% endblock %}
+  </main>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

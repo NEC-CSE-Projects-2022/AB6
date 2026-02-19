@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Dataset • Plant Disease Detector{% endblock %}
+
+{% block content %}
+
+<section class="card">
+  <h2>Dataset Information</h2>
+  <p>
+    This project uses a curated plant leaf image dataset for disease detection.
+  </p>
+  <a href="https://www.kaggle.com/datasets/emmarex/plantdisease">Click here to visit dataset</a>
+</section>
+
+<section class="card">
+  <h3>Sample Dataset Images</h3>
+
+  {% if images and images|length > 0 %}
+
+  <div class="dataset-grid">
+    {% for img in images %}
+    <div class="dataset-card">
+
+      <img src="{{ url_for('dataset_image', filename=img) }}" alt="{{ img }}">
+
+      <p class="img-name">{{ img }}</p>
+
+      <a class="btn-primary"
+         href="{{ url_for('dataset_image', filename=img) }}"
+         download>
+        Download
+      </a>
+
+    </div>
+    {% endfor %}
+  </div>
+
+  {% else %}
+  <p class="hint">No dataset images found.</p>
+  {% endif %}
+
+</section>
+
+{% endblock %}
